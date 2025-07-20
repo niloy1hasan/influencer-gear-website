@@ -1,0 +1,40 @@
+/* root settings */
+:root {
+    --text-color: #3A3A3A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* shared styles */
+
+.flex {
+    display: flex;
+}
+
+
+/* header */
+
+/* navbar */
+
+.nav-bar {
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 120px;
+}
+
+ul {
+    gap: 35px;
+    align-items: center;
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: var(--text-color);
+}
