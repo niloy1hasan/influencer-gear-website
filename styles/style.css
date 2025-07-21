@@ -2,7 +2,7 @@
 :root {
     --text-color: #3A3A3A;
     --primary-color: #E02C6D;
-    --secondary-color: #
+    --border-color: black;
 }
 
 * {
@@ -20,7 +20,7 @@
 /* header */
 
 header {
-    height: calc(100vh - 30px - 40px);
+    height: calc(100vh - 30px);
 }
 
 /* navbar */
@@ -52,7 +52,7 @@ ul a {
     color: var(--text-color);
     align-items: center;
     gap: 60px;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 .banner-content {
@@ -88,6 +88,17 @@ ul a {
     cursor: pointer;
 }
 
+/* sponsore section */
+
+.sponsore-section {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 
 /* responsive media query */
 
@@ -121,6 +132,11 @@ ul a {
 
     .banner-image {
         width: 90%;
+    }
+
+    .sponsore-section {
+        gap: 20px;
+        justify-content: center;
     }
 
 }
