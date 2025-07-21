@@ -2,6 +2,7 @@
 :root {
     --text-color: #3A3A3A;
     --primary-color: #E02C6D;
+    --secondary-color: #0A0826;
     --border-color: black;
 }
 
@@ -28,7 +29,12 @@ header {
 
 /* navbar */
 
+.brand {
+    cursor: pointer;
+}
+
 .nav-bar {
+    max-width: 1440px;
     justify-content: space-between;
     align-items: center;
     margin: 30px 120px;
@@ -52,19 +58,22 @@ ul a {
 /* banner */
 
 .banner {
+    max-width: 1440px;
+    margin: 0 auto;
     color: var(--text-color);
     align-items: center;
+    justify-content: space-around;
     gap: 60px;
     padding-top: 50px;
 }
 
 .banner-content {
-    margin-left: 120px;
+    margin-left: 80px;
     max-width: 582px;
 }
 
 .banner-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 
 .banner-description {
@@ -204,6 +213,45 @@ ul a {
     cursor: pointer;
 }
 
+/* footer section */
+
+footer {
+    background-color: var(--secondary-color);
+}
+
+.footer-section {
+    color: white;
+    text-align: center;
+    padding: 60px 10px;
+}
+
+.social-link i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.social-link-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-brand-name, .copyright-description {
+    margin-bottom: 10px;
+}
+
 /* responsive media query */
 
 /* mobile device */
@@ -257,6 +305,68 @@ ul a {
 
     .featured-description {
         width: 100%;
+    }
+
+    .see-more-btn {
+        align-self: center;
+    }
+
+}
+/* tablet device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    header {
+        height: auto;
+    }
+    .nav-bar,
+    .nav-bar-menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0 0 0;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .banner-content {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .banner-image {
+        width: 90%;
+    }
+
+    .sponsore-section {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    /* product section */
+
+    .product-container {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    /* featured product section */
+    .featured-product {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .featured-description {
+        width: 100%;
+    }
+
+    .see-more-btn {
+        align-self: center;
     }
 
 }
