@@ -81,7 +81,7 @@ ul a {
 }
 
 .banner-image {
-    background-image: url('/images/Circle\ design.svg');
+    background-image: url('../images/circle-design.svg');
     background-size: cover;
 }
 
